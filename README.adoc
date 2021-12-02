@@ -38,3 +38,13 @@ Both Node and NPM are handled by Gradle as well, with newest LTS version that's 
 * Language: JavaScript
 * Frameworks: React
 * Builder: Webpack
+
+== Recruitment-specific info
+
+After setting up database via available `docker-compose.yml`, there is made a `MockController` class, which is **intentionally not as a test**. This is for sole purpose of testing solution manually, as an user, for the status code handling. When adding a service, to mock specific status code, you need to write a matching URL:
+
+----
+http://[HOST]:[PORT]/api/v1/mock/[HTTP_CODE]
+----
+
+If instead of HTTP code you'll write `timeout`, the response will intentionally timeout beyond the program's current limit.
