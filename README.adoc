@@ -1,0 +1,40 @@
+= Service Manager for Kry recruitment process
+
+image:https://img.shields.io/badge/vert.x-4.2.1-purple.svg[link="https://vertx.io"]
+image:https://img.shields.io/badge/webpack-5.64.1-navy.svg[link="https://mysql.com"]
+image:https://img.shields.io/badge/mysql-8.0.27-blue.svg[link="https://mysql.com"]
+image:https://img.shields.io/badge/gradle-7.0-green.svg[link="https://gradle.org"]
+image:https://img.shields.io/badge/node.js-16.13.0-yellow.svg[link="https://nodejs.org"]
+image:https://img.shields.io/badge/npm-8.1.4-red.svg[link="https://nodejs.org"]
+image:https://img.shields.io/badge/java-11-brown.svg[link="https://java.com"]
+
+This application was generated using http://start.vertx.io
+
+== Building
+
+=== Run the application
+
+[source]
+----
+./gradlew clean run
+----
+
+== Questions
+
+=== What about frontend?
+Frontend is bundled within the app and built via Gradle Node Plugin's `NpmTask`.
+
+=== And Node? NPM?
+Both Node and NPM are handled by Gradle as well, with newest LTS version that's here so far.
+
+== Code
+
+=== Backend
+* Language: Java
+* Frameworks: Vert.x
+* Builder: Gradle
+
+=== Frontend
+* Language: JavaScript
+* Frameworks: React
+* Builder: Webpack
